@@ -19,4 +19,5 @@ struct ComputerSecurity: Codable, Hashable {
     let secureBootLevel: String?
     let externalBootLevel: String?
     let bootstrapTokenAllowed: Bool?
+    let bootstrapTokenEscrowedStatus: String?
 }

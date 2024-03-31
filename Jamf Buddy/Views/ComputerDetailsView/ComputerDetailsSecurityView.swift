@@ -31,6 +31,7 @@ struct ComputerDetailsSecurityView: View {
             PropertyView(property: "Secure Boot Level", value: security.secureBootLevel ?? "")
             PropertyView(property: "External Boot Level", value: security.externalBootLevel ?? "")
             PropertyView(property: "Bootstrap Token Allowed", value: security.bootstrapTokenAllowed?.description ?? "")
+            PropertyView(property: "Bootstrap Token Escrowed", value: security.bootstrapTokenEscrowedStatus ?? "")
             PropertyView(property: "Firewall Enabled", value: security.firewallEnabled?.description ?? "")
         }
     }
