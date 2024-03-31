@@ -284,15 +284,15 @@
 		200FF4C82AFEBF7A009E0966 /* Jamf Buddy */ = {
 			isa = PBXGroup;
 			children = (
-				20CE442A2B30E3F9008D848E /* TestData */,
-				208A066B2B1E7D0D00E4FA40 /* Extensions */,
-				200FF4E32AFEC40E009E0966 /* Utilities */,
-				200FF4DC2AFEC14F009E0966 /* Views */,
-				200FF4DB2AFEC14A009E0966 /* Models */,
+				200FF4CF2AFEBF7C009E0966 /* Jamf_Buddy.entitlements */,
 				200FF4C92AFEBF7A009E0966 /* Jamf_BuddyApp.swift */,
 				200FF4CD2AFEBF7C009E0966 /* Assets.xcassets */,
-				200FF4CF2AFEBF7C009E0966 /* Jamf_Buddy.entitlements */,
+				208A066B2B1E7D0D00E4FA40 /* Extensions */,
+				200FF4DB2AFEC14A009E0966 /* Models */,
 				200FF4D02AFEBF7C009E0966 /* Preview Content */,
+				20CE442A2B30E3F9008D848E /* TestData */,
+				200FF4E32AFEC40E009E0966 /* Utilities */,
+				200FF4DC2AFEC14F009E0966 /* Views */,
 			);
 			path = "Jamf Buddy";
 			sourceTree = "<group>";
@@ -345,11 +345,11 @@
 		200FF4E32AFEC40E009E0966 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				20DC88412B1E425F0090866F /* ModelIconHelper.swift */,
+				2047F0272B3099AD0002F83E /* JpsApiSection.swift */,
 				200FF4EC2AFEC62A009E0966 /* JpsEndpoint.swift */,
 				200FF4E42AFEC41F009E0966 /* JpsService.swift */,
+				20DC88412B1E425F0090866F /* ModelIconHelper.swift */,
 				20BB3AAA2B22721500519C79 /* ModelService.swift */,
-				2047F0272B3099AD0002F83E /* JpsApiSection.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -421,14 +421,14 @@
 			isa = PBXGroup;
 			children = (
 				209439142B23B4DB00872C67 /* ComputerContentCaching.swift */,
-				2094391C2B23BE1300872C67 /* ComputerContentCachingParent.swift */,
 				2094391E2B23BE1C00872C67 /* ComputerContentCachingAlert.swift */,
 				209439202B23BE2500872C67 /* ComputerContentCachingCacheDetail.swift */,
-				209439222B23BE2E00872C67 /* ComputerContentCachingDataMigrationErrorUserInfo.swift */,
 				209439242B23BE3500872C67 /* ComputerContentCachingDataMigrationError.swift */,
+				209439222B23BE2E00872C67 /* ComputerContentCachingDataMigrationErrorUserInfo.swift */,
+				2094391C2B23BE1300872C67 /* ComputerContentCachingParent.swift */,
 				209439262B23BE3C00872C67 /* ComputerContentCachingParentAlert.swift */,
-				209439282B23BE4300872C67 /* ComputerContentCachingParentDetails.swift */,
 				2094392A2B23BE4B00872C67 /* ComputerContentCachingParentCapabilities.swift */,
+				209439282B23BE4300872C67 /* ComputerContentCachingParentDetails.swift */,
 				2094392C2B23BE5200872C67 /* ComputerContentCachingParentLocalNetwork.swift */,
 			);
 			path = ComputerContentCaching;
@@ -502,12 +502,12 @@
 		20DC882D2B1A89010090866F /* DashboardView */ = {
 			isa = PBXGroup;
 			children = (
-				20DC88312B1A89310090866F /* DashboardView.swift */,
 				201991AA2B48A2CC0084E464 /* DashboardCellView.swift */,
 				202369442B4DE85300908BCB /* DashboardDetailView.swift */,
-				202369462B4DE8E600908BCB /* DashboardPieChartCellView.swift */,
-				202369482B4DE9B000908BCB /* DashboardMetricView.swift */,
 				2021BC492B61AFDA008E6E96 /* DashboardDetailViewModel.swift */,
+				202369482B4DE9B000908BCB /* DashboardMetricView.swift */,
+				202369462B4DE8E600908BCB /* DashboardPieChartCellView.swift */,
+				20DC88312B1A89310090866F /* DashboardView.swift */,
 			);
 			path = DashboardView;
 			sourceTree = "<group>";
@@ -543,36 +543,36 @@
 		20DC883C2B1BC3460090866F /* ComputerDetailsView */ = {
 			isa = PBXGroup;
 			children = (
-				206E87552B3DD1A800001170 /* ComputerDetailsContentCaching */,
-				20CE44262B30E2E3008D848E /* ComputerDetailsView.swift */,
-				20CE44282B30E2F0008D848E /* ComputerDetailsViewModel.swift */,
-				206CE2C92B33D4D600749ED8 /* ComputerDetailsGeneralView.swift */,
+				206E87372B3B759200001170 /* ComputerDetailsApplicationsListView.swift */,
+				206E874F2B3CA1D000001170 /* ComputerDetailsAttachmentsListView.swift */,
+				206E873D2B3C4C2100001170 /* ComputerDetailsCertificatesListView.swift */,
+				206E87312B3B6F4800001170 /* ComputerDetailsDiskEncryptionView.swift */,
 				206CE2CB2B34B28500749ED8 /* ComputerDetailsExtensionAttributeListView.swift */,
 				206E872F2B3B6D0E00001170 /* ComputerDetailsExtensionAttributeSectionView.swift */,
-				206CE2CF2B34CA6700749ED8 /* ComputerDetailsHardwareView.swift */,
-				206CE2D12B34D23E00749ED8 /* ComputerDetailsOSView.swift */,
-				206CE2D32B34D55F00749ED8 /* ComputerDetailsUserAndLocationView.swift */,
-				206CE2D52B34D88B00749ED8 /* ComputerDetailsSecurityView.swift */,
-				206CE2D72B34DB8800749ED8 /* ComputerDetailsPurchasingView.swift */,
-				206CE2D92B34E05800749ED8 /* ComputerDetailsStorageView.swift */,
-				206CE2DB2B34E32A00749ED8 /* ComputerDetailsStorageDiskView.swift */,
-				207CECC32B3B526100B0D5B9 /* ComputerDetailsPartitionsListView.swift */,
-				206E87312B3B6F4800001170 /* ComputerDetailsDiskEncryptionView.swift */,
-				206E87332B3B743C00001170 /* ComputerDetailsLicensedSoftwareView.swift */,
-				206E87372B3B759200001170 /* ComputerDetailsApplicationsListView.swift */,
-				206E873B2B3C45E100001170 /* ComputerDetailsProfilesListView.swift */,
-				206E873D2B3C4C2100001170 /* ComputerDetailsCertificatesListView.swift */,
-				206E87432B3C52A800001170 /* ComputerDetailsPackageReceiptsListView.swift */,
-				206E87452B3C88DB00001170 /* ComputerDetailsLocalUserAccountsListView.swift */,
-				206E87472B3C976100001170 /* ComputerDetailsLocalUserAccountPasswordDetailsView.swift */,
-				206E87492B3C9AB100001170 /* ComputerDetailsLocalUserAccountAzureDetailsView.swift */,
-				206E874B2B3C9EA200001170 /* ComputerDetailsPrintersListView.swift */,
-				206E874D2B3CA0F200001170 /* ComputerDetailsServicesListView.swift */,
-				206E874F2B3CA1D000001170 /* ComputerDetailsAttachmentsListView.swift */,
-				2094B4E32B3E7BB40047818C /* ComputerDetailsPluginsListView.swift */,
 				2094B4E52B3E7CDD0047818C /* ComputerDetailsFontsListView.swift */,
+				206CE2C92B33D4D600749ED8 /* ComputerDetailsGeneralView.swift */,
+				206CE2CF2B34CA6700749ED8 /* ComputerDetailsHardwareView.swift */,
 				2094B4E72B3E7DD30047818C /* ComputerDetailsiBeaconsListView.swift */,
+				206E87332B3B743C00001170 /* ComputerDetailsLicensedSoftwareView.swift */,
+				206E87492B3C9AB100001170 /* ComputerDetailsLocalUserAccountAzureDetailsView.swift */,
+				206E87472B3C976100001170 /* ComputerDetailsLocalUserAccountPasswordDetailsView.swift */,
+				206E87452B3C88DB00001170 /* ComputerDetailsLocalUserAccountsListView.swift */,
+				206CE2D12B34D23E00749ED8 /* ComputerDetailsOSView.swift */,
+				206E87432B3C52A800001170 /* ComputerDetailsPackageReceiptsListView.swift */,
+				207CECC32B3B526100B0D5B9 /* ComputerDetailsPartitionsListView.swift */,
+				2094B4E32B3E7BB40047818C /* ComputerDetailsPluginsListView.swift */,
+				206E874B2B3C9EA200001170 /* ComputerDetailsPrintersListView.swift */,
+				206E873B2B3C45E100001170 /* ComputerDetailsProfilesListView.swift */,
+				206CE2D72B34DB8800749ED8 /* ComputerDetailsPurchasingView.swift */,
+				206CE2D52B34D88B00749ED8 /* ComputerDetailsSecurityView.swift */,
+				206E874D2B3CA0F200001170 /* ComputerDetailsServicesListView.swift */,
 				2094B4E92B3E7ECA0047818C /* ComputerDetailsSoftwareUpdatesListView.swift */,
+				206CE2DB2B34E32A00749ED8 /* ComputerDetailsStorageDiskView.swift */,
+				206CE2D92B34E05800749ED8 /* ComputerDetailsStorageView.swift */,
+				206CE2D32B34D55F00749ED8 /* ComputerDetailsUserAndLocationView.swift */,
+				20CE44262B30E2E3008D848E /* ComputerDetailsView.swift */,
+				20CE44282B30E2F0008D848E /* ComputerDetailsViewModel.swift */,
+				206E87552B3DD1A800001170 /* ComputerDetailsContentCaching */,
 			);
 			path = ComputerDetailsView;
 			sourceTree = "<group>";
